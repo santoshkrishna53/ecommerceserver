@@ -71,9 +71,9 @@ app.use('/api', api)
 
 // Create port
 
-const port = process.env.PORT || 4000;
+var port = process.env.PORT || 8080;
 const server = app.listen(port, () => {
-  console.log('Connected to port ' + port)
+  console.log('server started in Connected to port ' + port)
 })
 require('./passport');
 app.use(passport.initialize());
