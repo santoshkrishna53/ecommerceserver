@@ -62,7 +62,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cors({ credentials: true, origin: true }))
 //Routes 
-const api = require('./routes/api.route');
+const api = require('../backend/routes/api.route')
 // const userroute = require('../backend/routes/user.route')
 const auth = require('./routes/auth.route');
 app.use('/api', api)
